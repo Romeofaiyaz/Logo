@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROMEK-XD-LOGO STORE</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Professional Title Style */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3.5em;
+            font-weight: 600;
+            color: #333;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        /* Grid Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Product Card */
+        .product {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+        }
+
+        .product h2 {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+            color: #222;
+        }
+
+        .product p {
+            color: #666;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .product a {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .product a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Tooltip for price */
+        .product p.price {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .product p.price:hover::after {
+            content: "Click to know more!";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 1.2em;
+        }
+
+        /* Coming Soon Section */
+        .coming-soon {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ROMEK-XD LOGO STORE </h1>
+        <div class="product-grid">
+            <script>
+                // Define product details
+                const products = [
+                    { id: 1, name: "Logo 1", price: "₹30", image: "https://i.ibb.co/x33LYqR/temp-image.jpg", link: "https://Wa.me/+919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%201" },
+                    { id: 2, name: "Logo 2", price: "₹30", image: "https://i.ibb.co/QDzyB4p/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%202" },
+                    { id: 3, name: "Logo 3", price: "₹50", image: "https://i.ibb.co/3THXZ8R/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%203" },
+                    { id: 4, name: "Logo 4", price: "₹30", image: "https://i.ibb.co/zVvfCd0/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%204" },
+                    { id: 5, name: "Logo 5", price: "₹30", image: "https://i.ibb.co/SsQGvsT/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%205" },
+                    { id: 6, name: "Logo 6", price: "₹30", image: "https://i.ibb.co/88Ybxkc/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%206" },
+                    { id: 7, name: "Logo 7", price: "₹40", image: "https://i.ibb.co/fGFjGZ0/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%207" },
+                    { id: 8, name: "Logo 8", price: "₹30", image: "https://i.ibb.co/rbVfWhB/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%208" },
+                    { id: 9, name: "Logo 9", price: "₹30", image: "https://i.ibb.co/y5VyzYd/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%209" },
+                    { id: 10, name: "Logo 10", price: "₹30", image: "https://i.ibb.co/pw1mQhN/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%2010" },
+                    { id: 11, name: "Logo 11", price: "₹30", image: "https://i.ibb.co/nzYqKJs/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%2011" },
+                    { id: 12, name: "Logo 12", price: "₹30", image: "https://i.ibb.co/WcMgJcT/temp-image.jpg", link: "https://wa.me/919341378016/?text=HELLO ROMEK-XD CREATE NEW LOGO FOR MY NAME %20Logo%2012" }
+                ];
+
+                // Dynamically create product cards
+                document.write(products.map(product => `
+                    <div class="product">
+                        <img src="${product.image}" alt="${product.name}">
+                        <h2>${product.name}</h2>
+                        <p class="price" onclick="alert('Price: ${product.price}')">${product.price}</p>
+                        <a href="${product.link}" target="_blank">Buy Now</a>
+                    </div>
+                `).join(''));
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="coming-soon">
+            <p>MORE LOGOS  COMING SOON!</p>
+        </div>
+        <p>MADE BY ROMEK-XD</p>
+    </footer>
+</body>
+</html>
